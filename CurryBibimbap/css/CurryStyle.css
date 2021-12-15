@@ -1,0 +1,54 @@
+body
+{
+    background-color: rgb(255, 127, 52);
+}
+.header
+{
+    background-image: linear-gradient(to bottom, rgb(206, 120, 8), rgb(255, 127, 52), rgb(206, 120, 8));
+}
+#title
+{
+    text-align: center;
+    font-family:Brush Script MT;
+    color: rgb(104, 54, 8);
+    font-size: 80px;
+}
+#picture 
+{
+    background-color: rgb(255, 127, 52);
+}
+#hicol
+{
+    box-shadow: 0 0px 12px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+#areacol
+{
+    box-shadow: 0 0px 12px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.footer
+{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    background-image: linear-gradient(to bottom, rgb(206, 120, 8), rgb(255, 127, 52), rgb(206, 120, 8));
+}
+#ft
+{
+    text-align: center;
+}
+
+
+.button1 
+{
+    background-color: #ec931e;
+    color: white;  
+}
+  
+.button1:hover 
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #94631b;  
+}
