@@ -43,6 +43,7 @@ body
     column-rule-style: solid;
     column-rule-width: 5px;
     box-shadow: 10px -10px rgb(230, 172, 134);
+    position: relative;
 }
 #c2>p
 {
