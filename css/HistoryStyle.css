@@ -1,6 +1,77 @@
 body 
 {
-    background-image: url(../images/backhistory.png);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-color: rgb(240, 191, 162);
+}
+#header
+{
+    background-color: rgb(241, 152, 100);
+}
+#title
+{
+    border-bottom: 1px solid rgb(255, 255, 255) ;
+    position: relative;
+}
+#curryC
+{
+    color: rgb(255, 255, 255);
+    font-size: 46px;
+    position: relative;
+}
+#ex
+{
+    color: rgb(255, 255, 255);
+    top:2;
+    position: relative;
+}
+#curry
+{
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    position: relative;
+    text-align: right;
+}
+#c1
+{
+    color: rgb(255, 255, 255);
+    margin: 100px 0px 50px 0px;
+}
+#c2
+{
+    color: rgb(245, 210, 187);
+    border-style: solid;
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-width: 5px;
+    box-shadow: 10px -10px rgb(230, 172, 134);
+}
+#c2>p
+{
+    font-size: 10px;
+    text-align: center;
+}
+#c3
+{
+    color: rgb(255, 255, 255);
+    padding: 220px 0px 0px 30px;
+}
+.button
+{
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(218, 118, 60);
+    border-color: rgb(102, 68, 45);
+}
+.button:hover
+{
+    background-color: #ffdfca;
+}
+#H
+{
+    font-size: 24px;
+    text-align: center;
+}
+#footer
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(153, 90, 54);
 }
