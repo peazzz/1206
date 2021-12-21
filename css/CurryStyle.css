@@ -26,7 +26,8 @@ body
 {
     width:95%;
     height:100%;
-    transition: 0.5s;
+    transition:0.5s;
+    padding: 10px;
 }
 .hiimg:hover
 {
@@ -37,6 +38,7 @@ body
     width:95%;
     height:100%;
     transition: 0.5s;
+    padding: 10px;
 }
 .areaimg:hover
 {
@@ -47,12 +49,20 @@ body
     box-shadow: 0 0px 12px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
 }
+/*
 .footer
 {
     width: 100%;
     position: fixed;
     bottom:0;
     background-image: linear-gradient(to bottom, rgb(206, 120, 8), rgb(255, 127, 52), rgb(206, 120, 8));
+}
+*/
+#team
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px;
 }
 #ft
 {

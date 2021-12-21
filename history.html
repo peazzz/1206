@@ -26,7 +26,11 @@
             <div class="container-fluid p-5" id="content">
                 <div class="row">
                     <div class="col-lg-3 col-xs-12" id="c1">
-                        <p id="c1-1">在印度南方如此炎熱的地區，常有辛香料刺激的口味，不同地區也有各自獨特的特色，好比北方較重視香味。</p>
+                        <div class = "c1content">
+                        <img src="images/india.png" class="img-fluid" width="150" height="150">
+                        <p>在印度南方如此炎熱的地區，常有辛香料刺激的口味，不同地區也有各自獨特的特色，好比北方較重視香味。</p>
+                        </div>
+                           
                     </div>
                     <div class="col-lg-6 col-xs-12" id="c2">
                         <h3>歷史</h3>
@@ -40,17 +44,33 @@
                         <p>____________________________</p>
                         <p>____________________________</p>
                         <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
                         <p>_______________<span>　　　　　　</span></p>
                         <p>________________<span>　　</span><span><button class="b2 button"></button></span><span>　　</span></p>
                         <p>_______________<span>　　</span><span>點我!</span><span>　　</span></p>
                         <p>____________________________</p>
                         <p>____________________________</p>
                         <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        <p>____________________________</p>
+                        
                     </div>
                     <div class="col-lg-3 col-xs-12" id="c3">
+                        <div class="c3content">
+                        <img src="images/dish.png" class="img-fluid" width="150" height="150" id="dish">
                         <p id="c3-1">咖哩所內涵的香料多達20種以上，無論是什麼食材搭配，都能做成獨一無二美味的模式。</p>
+                        </div>               
                     </div>
                 </div>
+                <img src="images/lil.png" class="img-fluid" width="150" height="150" id="lil">
             </div>
         </div>
         <div class="container-fluid" id="footer">
@@ -63,7 +83,7 @@
 <script> 
     $(document).ready(function(){
       $(".b1").click(function(){
-        $("#c1-1").toggle();
+        $(".c1content").toggle();
       });
     });
 </script>
@@ -71,7 +91,7 @@
 <script> 
     $(document).ready(function(){
       $(".b2").click(function(){
-        $("#c3-1").toggle();
+        $(".c3content").toggle();
       });
     });
 </script>
