@@ -52,15 +52,7 @@ body
 {
     text-align: center;
 }
-/*
-.footer
-{
-    width: 100%;
-    position: fixed;
-    bottom:0;
-    background-image: linear-gradient(to bottom, rgb(206, 120, 8), rgb(255, 127, 52), rgb(206, 120, 8));
-}
-*/
+
 .footer
 {
     background-color: #f39b28;
