@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/peazzz/CurryBibimbap#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "nedb-promises": "^5.0.3"
   }
 }

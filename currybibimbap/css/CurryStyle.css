@@ -1,0 +1,270 @@
+body
+{
+    background-color: rgb(255, 127, 52);
+}
+
+.header
+{
+    /*
+    background-image: linear-gradient(to bottom, rgb(206, 120, 8), rgb(255, 127, 52), rgb(206, 120, 8));
+    */
+    background-color: rgb(202, 88, 12);
+}
+
+#title
+{
+    text-align: center;
+    font-family:Brush Script MT;
+    color: rgb(104, 54, 8);
+    font-size: 80px;
+}
+
+#picture 
+{
+    background-color: rgb(255, 127, 52);
+}
+#hicol
+{
+    text-align: center;
+}
+.hiimg
+{
+    width:95%;
+    height:100%;
+    transition:0.5s;
+    padding: 10px;
+}
+.hiimg:hover
+{
+    width:100%;
+}
+.areaimg
+{
+    width:95%;
+    height:100%;
+    transition: 0.5s;
+    padding: 10px;
+}
+.areaimg:hover
+{
+    width:100%;
+}
+#areacol
+{
+    text-align: center;
+}
+
+.footer
+{
+    background-color: #f39b28;
+}
+
+#team
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+#ft
+{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.button1 
+{
+    background-color: #ec931e;
+    color: white;  
+}
+  
+.button1:hover 
+{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #94631b;  
+}
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.3%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.3%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+#cardd
+{
+    background-color: rgb(255, 109, 104);
+}
+.btn-primary {
+    color: white;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    color: white;
+    background-color: #fec503;
+    border-color: #f6bf01;
+  }
+  .btn-primary:active,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    background-image: none;
+  }
+  .btn-primary.disabled,
+  .btn-primary[disabled],
+  fieldset[disabled] .btn-primary,
+  .btn-primary.disabled:hover,
+  .btn-primary[disabled]:hover,
+  fieldset[disabled] .btn-primary:hover,
+  .btn-primary.disabled:focus,
+  .btn-primary[disabled]:focus,
+  fieldset[disabled] .btn-primary:focus,
+  .btn-primary.disabled:active,
+  .btn-primary[disabled]:active,
+  fieldset[disabled] .btn-primary:active,
+  .btn-primary.disabled.active,
+  .btn-primary[disabled].active,
+  fieldset[disabled] .btn-primary.active {
+    background-color: #fed136;
+    border-color: #fed136;
+  }
+  .btn-primary .badge {
+    color: #fed136;
+    background-color: white;
+  }
+  .btn-xl {
+    color: white;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  .btn-xl:hover,
+  .btn-xl:focus,
+  .btn-xl:active,
+  .btn-xl.active,
+  .open .dropdown-toggle.btn-xl {
+    color: white;
+    background-color: #fec503;
+    border-color: #f6bf01;
+  }
+  .btn-xl:active,
+  .btn-xl.active,
+  .open .dropdown-toggle.btn-xl {
+    background-image: none;
+  }
+  .btn-xl.disabled,
+  .btn-xl[disabled],
+  fieldset[disabled] .btn-xl,
+  .btn-xl.disabled:hover,
+  .btn-xl[disabled]:hover,
+  fieldset[disabled] .btn-xl:hover,
+  .btn-xl.disabled:focus,
+  .btn-xl[disabled]:focus,
+  fieldset[disabled] .btn-xl:focus,
+  .btn-xl.disabled:active,
+  .btn-xl[disabled]:active,
+  fieldset[disabled] .btn-xl:active,
+  .btn-xl.disabled.active,
+  .btn-xl[disabled].active,
+  fieldset[disabled] .btn-xl.active {
+    background-color: #fed136;
+    border-color: #fed136;
+  }
+  .btn-xl .badge {
+    color: #fed136;
+    background-color: white;
+  }
+
+section#contact {
+    background-color: #dd6b00;
+    padding-bottom: 20px;
+  }
+  section#contact .section-heading {
+    color: white;
+  }
+  section#contact .form-group {
+    margin-bottom: 25px;
+  }
+  section#contact .form-group input,
+  section#contact .form-group textarea {
+    padding: 20px;
+  }
+  section#contact .form-group input.form-control {
+    height: auto;
+  }
+  section#contact .form-group textarea.form-control {
+    height: 236px;
+  }
+  section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+  }
+  section#contact ::-webkit-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+  }
+  section#contact :-moz-placeholder {
+    /* Firefox 18- */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+  }
+  section#contact ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+  }
+  section#contact :-ms-input-placeholder {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #eeeeee;
+  }
+  section#contact .text-danger {
+    color: #e74c3c;
+  }
+  
