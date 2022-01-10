@@ -1,12 +1,32 @@
-body 
+body
 {
-    background-color: rgb(240, 191, 162);
+    background-color: rgb(255, 127, 52);
+}
+#title
+{
+    text-align: center;
+    font-family:Brush Script MT;
+    color: rgb(104, 54, 8);
+    font-size: 80px;
+}
+.title
+{
+  text-decoration: none;
+}
+
+.header
+{
+    background-color: rgb(255, 127, 52);
 }
 #header
 {
     background-color: rgb(241, 152, 100);
 }
-#title
+#underhead
+{
+    background-color: rgb(240, 191, 162);
+}
+#titlev
 {
     border-bottom: 1px solid rgb(255, 255, 255) ;
     position: relative;
@@ -84,4 +104,10 @@ body
 p
 {
     font-size:24px;
+}
+#ft
+{
+    background-color: rgb(255, 127, 52);
+    text-align: center;
+    color: rgb(255, 255, 255);
 }

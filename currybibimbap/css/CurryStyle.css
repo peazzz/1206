@@ -1,22 +1,29 @@
 body
 {
-    background-color: rgb(255, 127, 52);
+  background-image: url("../images/CURRY.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-color: antiquewhite;
 }
 
-.header
+.BGC
 {
-    /*
-    background-image: linear-gradient(to bottom, rgb(206, 120, 8), rgb(255, 127, 52), rgb(206, 120, 8));
-    */
-    background-color: rgb(202, 88, 12);
+  opacity: 0.3;
 }
 
 #title
 {
     text-align: center;
     font-family:Brush Script MT;
-    color: rgb(104, 54, 8);
+    color: rgb(202, 88, 12);
     font-size: 80px;
+    text-shadow: 2px 2px rgb(104, 54, 8);  
+}
+
+.title
+{
+  text-decoration: none;
 }
 
 #picture 
@@ -54,19 +61,19 @@ body
     text-align: center;
 }
 
-.footer
+#portfolio
 {
-    background-color: #f39b28;
+    background-color: #ff970f;
 }
 
 #team
 {
     text-align: center;
     color: rgb(255, 255, 255);
-    margin: 10px;
 }
-#ft
+.ft
 {
+  background-color: rgb(202, 88, 12);
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -104,12 +111,12 @@ body
     
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(33.3%);
+      transform: translateX(25%);
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-33.3%);
+      transform: translateX(-25%);
     }
 }
 
@@ -118,9 +125,11 @@ body
   transform: translateX(0);
 }
 
-#cardd
+.inf
 {
-    background-color: rgb(255, 109, 104);
+  padding-top: 10px;
+    background-color: rgba(255, 123, 0, 0.555);
+    color: rgba(255, 255, 255, 0.836);
 }
 .btn-primary {
     color: white;
@@ -215,7 +224,7 @@ body
   }
 
 section#contact {
-    background-color: #dd6b00;
+    background-color: rgb(255, 127, 52);
     padding-bottom: 20px;
   }
   section#contact .section-heading {

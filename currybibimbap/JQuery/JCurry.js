@@ -35,23 +35,3 @@ $(document).ready(function () {
     $(".areaimg").hide("1000");
   });
 });
-
-
-
-$(document).ready(function () {
-  $(".areaimg").click(function () {
-    $(".hiimg").animate({ opacity: '0' });
-    $(".areaimg").animate({ opacity: '0' });
-    $(".hiimg").toggle();
-    $(".areaimg").toggle();
-  });
-});
-
-
-
-$(document).ready(function () {
-  $(".areaimg").click(function () {
-    $(".row").append("<img src='images/map.png' width=100% height=100%>");
-    $(".row").append("<button class='button1'>上一頁</button>");
-  });
-});

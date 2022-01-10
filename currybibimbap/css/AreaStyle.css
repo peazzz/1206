@@ -1,0 +1,48 @@
+body
+{
+    background-color: rgb(255, 127, 52);
+}
+#title
+{
+    text-align: center;
+    font-family:Brush Script MT;
+    color: rgb(104, 54, 8);
+    font-size: 80px;
+}
+.title
+{
+  text-decoration: none;
+}
+#frame
+{
+  background-color: rgb(240, 191, 162);
+}
+#content
+{
+  background-color: rgb(255, 222, 149);
+}
+#titleimg
+{
+  color: white;
+  font-size: 40px;
+  text-shadow: 0px 0px 8px #000000;
+}
+#material
+{
+  background-color: rgb(255, 248, 208);
+}
+.step
+{
+  background-color: rgb(255, 248, 208);
+  margin: 15px;
+}
+p.stepp
+{
+  font-size: 24px;
+}
+#ft
+{
+    background-color: rgb(255, 127, 52);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
