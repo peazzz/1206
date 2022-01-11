@@ -1,6 +1,10 @@
 body
 {
-    background-color: rgb(255, 127, 52);
+    background-color: rgb(255, 225, 187);
+    background-image: url("../images/CURRY.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
 }
 #title
 {
@@ -13,20 +17,20 @@ body
 {
   text-decoration: none;
 }
-#frame
-{
-  background-color: rgb(240, 191, 162);
-}
-#content
-{
-  background-color: rgb(255, 222, 149);
-}
+
+
 #titleimg
 {
   color: white;
   font-size: 40px;
   text-shadow: 0px 0px 8px #000000;
 }
+
+.t
+{
+  background-color: rgba(104, 54, 8, 0.493);
+}
+
 #material
 {
   background-color: rgb(255, 248, 208);
@@ -42,7 +46,6 @@ p.stepp
 }
 #ft
 {
-    background-color: rgb(255, 127, 52);
     text-align: center;
     color: rgb(255, 255, 255);
 }

@@ -26,10 +26,6 @@ body
   text-decoration: none;
 }
 
-#picture 
-{
-    background-color: rgb(255, 127, 52);
-}
 #hicol
 {
     text-align: center;
@@ -61,11 +57,6 @@ body
     text-align: center;
 }
 
-#portfolio
-{
-    background-color: #ff970f;
-}
-
 #team
 {
     text-align: center;
@@ -73,7 +64,6 @@ body
 }
 .ft
 {
-  background-color: rgb(202, 88, 12);
     text-align: center;
     color: rgb(255, 255, 255);
 }
@@ -224,7 +214,6 @@ body
   }
 
 section#contact {
-    background-color: rgb(255, 127, 52);
     padding-bottom: 20px;
   }
   section#contact .section-heading {

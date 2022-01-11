@@ -11,6 +11,8 @@
     <!-- CSS -->
     <link href="css/AreaStyle.css" rel="stylesheet" type="text/css">
     <script src="jquery-3.6.0.min.js"></script>
+    <!-- vue.js -->
+    <script src="vue.min.js"></script>
 </head>
 
 <body>
@@ -22,40 +24,273 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="container-fluid p-3" id="frame">
-            <div class="container-fluid p-5 " id="content">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
-                        <p>日式咖哩</p>
-                        <img src="images/backhistory.png" class="img-fluid">
-                    </div>
-                    <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
-                        <h3>準備材料(5人份)</h3><br>
-                        <p>牛肉(或以雞肉、羊肉、蝦子代替)450克/1塊</p>
-                        <p>中等大小的洋蔥 1又3/4顆(350克/13盎司)</p>
-                        <p>中等大小的胡蘿蔔 1/2條(100克/3.5盎司)</p>
-                        <p>中等大小的馬鈴薯 1顆(150克/5盎司)</p>
-                        <p>植物油 1大匙</p>
-                        <p>水 540cc</p>
-                        <p>咖哩塊 92克 1包</p>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">泰式咖哩</p>
+                                    <img src="images/tl.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>雞腿肉　　1kg　　　　　　　泰式紅咖哩醬　100g</p>
+                                    <p>馬鈴薯　　2顆</p>
+                                    <p>紅蔥頭　　3顆</p>
+                                    <p>椰奶　　350ml</p>
+                                    <p>檸檬葉　　5片</p>
+                                    <p>九層塔　　少許</p>
+                                    <p>糖　　　1大匙</p>
+                                    <p>魚露　　2大匙</p>
+                                    <p>水　　　500ml</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">首先將紅蔥頭下鍋爆香後，倒入紅咖哩醬炒香。接著倒入200ml的椰奶炒出香氣。</p><br>
+                                <p class="stepp">放雞肉炒拌。</p><br>
+                                <p class="stepp">再來加入水、馬鈴薯、檸檬葉和椰奶(150ml)並開中大火煮滾，接著轉小火煨煮。(直到馬鈴薯熟透)</p><br>
+                                <p class="stepp">最後起鍋前再加入九層塔、魚露和糖調味就完成了。</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="step p-4">
-                    <h1>烘飪步驟</h1>
-                    <p class="stepp">牛肉、馬鈴薯及胡蘿蔔切丁，洋蔥切末。</p><br>
-                    <p class="stepp">在太平底鍋中熱油，以中火拌炒肉和蔬菜約5分鐘。</p><br>
-                    <p class="stepp">加水後加熱至沸騰。轉至小火，蓋上鍋蓋，加熱約15分鐘，至材料變軟。</p><br>
-                    <p class="stepp">關火後將料理塊剝成小塊，放入鍋中。攪拌至咖哩塊完全溶化後，邊攪拌邊加熱約5分鐘。</p><br>
-                    <p class="stepp">趁熱淋在米飯或麵條上，即可享用。</p>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">日式咖哩</p>
+                                    <img src="images/jp.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>牛肉(或以雞肉、羊肉、蝦子代替)　　450克/1塊</p>
+                                    <p>中等大小的洋蔥　　　　1又3/4顆(350克/13盎司)</p>
+                                    <p>中等大小的胡蘿蔔　　　　1/2條(100克/3.5盎司)</p>
+                                    <p>中等大小的馬鈴薯　　　　　　1顆(150克/5盎司)</p><br>
+                                    <p>植物油　　1大匙</p>
+                                    <p>水　　　　540cc</p>
+                                    <p>咖哩塊　92克1包</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">牛肉、馬鈴薯及胡蘿蔔切丁，洋蔥切末。</p><br>
+                                <p class="stepp">在太平底鍋中熱油，以中火拌炒肉和蔬菜約5分鐘。</p><br>
+                                <p class="stepp">加水後加熱至沸騰。轉至小火，蓋上鍋蓋，加熱約15分鐘，至材料變軟。</p><br>
+                                <p class="stepp">關火後將料理塊剝成小塊，放入鍋中。攪拌至咖哩塊完全溶化後，邊攪拌邊加熱約5分鐘。</p><br>
+                                <p class="stepp">趁熱淋在米飯或麵條上，即可享用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">印度咖哩</p>
+                                    <img src="images/ind.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>洋蔥　　　1小顆　　　　　　　　蒜頭　　1大顆</p>
+                                    <p>薑　　　　　4片　　　　　　　　高湯　　1罐</p>
+                                    <p>紅蘿蔔　　1小條　　　　　　　玉米筍　　1小盒</p>
+                                    <p>馬鈴薯　　2小顆　　　　　　　　蘋果　　1小顆</p>
+                                    <p>蕃茄　　　　1顆　　　　　　　　茄子　　1條</p>
+                                    <p>豬里肌肉 　1小條</p>
+                                    <p>鹽　　　　　適量</p>
+                                    <p>香菜　　　　適量</p>
+                                    <p>太白粉　　　少許</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">洋蔥切小丁，小火慢慢炒軟，再加蒜頭、薑片炒香。</p><br>
+                                <p class="stepp">紅蘿蔔切小塊炒一下，加高湯燉煮。另外加肉桂卷與月桂葉一起燉煮。</p><br>
+                                <p class="stepp">其他蔬菜水果全都切成小塊狀，等紅蘿蔔煮稍軟後，加入玉米筍馬鈴薯蘋果下去燉煮，過一段時間在加入番茄和茄子。</p><br>
+                                <p class="stepp">等到食材都煮軟了之後，就可加印度咖哩粉、匈牙利紅椒粉、肉桂粉、奶粉下去調味，最後在加一點鹽調鹹淡，灑上香菜拌勻。</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">英國咖哩</p>
+                                    <img src="images/uk.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>雞肉　　300公克　　　　　　　洋蔥　300公克</p>
+                                    <p>奶油　　3大匙　　　　　　　　 麵粉　　3大匙</p>
+                                    <p>雞高湯　5杯</p>
+                                    <p>豌豆仁　100克</p>
+                                    <p>鮮奶油　1/2杯</p>
+                                    <p>咖哩粉　1大匙</p>
+                                    <p>鹽　　　少許</p>
+                                    <p>胡椒粉　少許</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">雞肉切成3公分左右的小塊狀，洋蔥切丁備用。</p><br>
+                                <p class="stepp">將鍋子預熱，放入奶油，炒香洋蔥與雞肉，再放入麵粉、咖哩粉炒勻，最後加入雞高湯、豌豆仁煮約30分鐘。</p><br>
+                                <p class="stepp">加入鮮奶油及適量的鹽、胡椒粉調味即可盛起食用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">馬來西亞咖哩</p>
+                                    <img src="images/ml.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>牛肋條　　　300公克　　　　　　　 蒜頭　酌量</p>
+                                    <p>紅蔥頭　　　 酌量　　　　　　　　　　薑　酌量</p>
+                                    <p>香茅　　　　 酌量　　　　　　　　　肉桂　酌量</p>
+                                    <p>洋蔥　　半顆(120g)　　　　　　　 馬鈴薯　1顆</p>
+                                    <p>紅蘿蔔　　　 1條</p><br>
+                                    <p>辣椒粉(馬來西亞購入) 15ml</p>
+                                    <p>咖哩粉(馬來西亞購入) 15ml</p>
+                                    <p>薑黃粉 2.5ml*2</p>
+                                    <p>椰奶 1罐</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">將蔬菜切齊備妥，調味粉調製後放入碗中備用。加入180~200cc的水混和在香料中。</p><br>
+                                <p class="stepp">不沾鍋將牛肋煎至外觀焦黃後取出備用。</p><br>
+                                <p class="stepp">原鍋放入蒜頭及香料炒香。接著放入洋蔥及蔬菜拌炒。</p><br>
+                                <p class="stepp">淋上調和好的醬汁，拌炒均勻後加水稍微淹過食材。放入電鍋，外鍋2杯水，煮熟後再悶15分鐘。煮熟好的咖哩放涼，移至冰箱冷藏1天，讓牛肉味更入味。</p><br>
+                                <p class="stepp">冰完後，取出將上層薄油用筷子夾掉，接著加熱。</p><br>
+                                <p class="stepp">起鍋後，淋上200cc椰奶，美味的馬來風味咖哩完成。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">斯里蘭卡咖哩</p>
+                                    <img src="images/sl.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>肉桂棒　　　3吋　　　　　　　　丁香　　　半小匙</p>
+                                    <p>咖哩葉　　　10片　　　　　　　 香菜籽　　2小匙</p>
+                                    <p>茴香　　　　1小匙　　　　　　　薑黃粉　　半小匙</p>
+                                    <p>孜然　　　　1小匙　　　　　　　生米　　　1大匙</p>
+                                    <p>葫蘆巴　　　半小匙</p>
+                                    <p>小荳蔻　　　2顆</p>
+                                    <p>胡椒　　　　半小匙</p>
+                                    <p>紅色乾辣椒　3根</p>
+                                    <p>芥末　　　　半小匙</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">把生米倒入鍋中烤約三分鐘，直到顏色變金黃，再倒入盤中。</p><br>
+                                <p class="stepp">剩下的香料每種分開入鍋烘烤，直到顏色變成褐色。</p><br>
+                                <p class="stepp">把冷卻的香料和米研磨再一塊，就能做出細緻的咖哩。</p><br>
+                                <p class="stepp">做好的咖哩粉除了能搭配各種肉類，也能和蔬果一起做成咖哩料理。</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="content m-5">
+                    <div class="container-fluid p-3" id="frame">
+                        <div class="container-fluid p-5 " id="content">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12 mx-auto d-block" id="titleimg">
+                                    <p class="t">新加坡咖哩</p>
+                                    <img src="images/sg.png" class="img-fluid">
+                                </div>
+                                <div class="col-md-5 col-xs-12 px-4 pt-4 mx-auto d-block" id="material">
+                                    <h3>準備材料</h3><br>
+                                    <p>雞翅膀　　　10隻　　　　　　　蒜　　　3~5瓣</p>
+                                    <p>小紅蔥　　　2粒　　　　　　　洋蔥　　　半粒</p>
+                                    <p>薑　　　　　2片</p>
+                                    <p>香茅　　　　2根切斷</p>
+                                    <p>肉類咖哩粉　2大匙</p>
+                                    <p>鹽　　　　　適量</p>
+                                    <p>糖　　　　　適量</p>
+                                    <p>椰醬奶　　　100g</p>
+                                    <p>馬鈴薯　　　2顆</p>
+                                </div>
+                            </div>
+                            <div class="step p-4">
+                                <h1>烘飪步驟</h1>
+                                <p class="stepp">煮滾一小鍋熱水，將雞翅浸入泡3到5分鐘撈起晾乾。</p><br>
+                                <p class="stepp">燒熱鍋，下油，將薑蒜小紅蔥爆香，再倒入咖哩粉炒出香味，把香茅丟進去。</p><br>
+                                <p class="stepp">把雞翅放入炒一炒，倒入一碗水燜一燜。</p><br>
+                                <p class="stepp">倒入切塊的馬鈴薯，以及椰漿奶，再燜15~20分鐘，雞翅熟了，馬鈴薯熟了，即可。</p><br>
+                                <p class="stepp">加鹽、糖調味，上桌。</p><br>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
     <div id="ft">
         <h5 class="mt-2">咖哩拌飯</h5>
     </div>
 </body>
+
 
 </html>
